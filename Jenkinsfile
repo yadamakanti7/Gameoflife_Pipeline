@@ -12,7 +12,7 @@ stage ('Source code-Package')
   {
     sshagent(['Ec2_deploy']) 
     {
-    sh 'scp -o StrictHostKeyChecking=no target/*.war ec2-user@172.31.13.54:/var/lib/tomcat7/webapps'
+    sh 'scp -o StrictHostKeyChecking=no target/*.war ubuntu@172.31.13.54:/var/lib/tomcat7/webapps'
     }
   }
 }
