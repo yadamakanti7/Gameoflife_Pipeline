@@ -6,6 +6,6 @@ stage ('Source code-Checkout')
 }
 stage ('Source code-Package')
 {
-  bat 'mvn package'
+  sh 'mvn package'
 }
 }
